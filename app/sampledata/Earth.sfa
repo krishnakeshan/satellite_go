@@ -139,7 +139,7 @@
     file: 'sampledata/Earth.gltf',
     name: 'Earth',
     recenter: 'root',
-    scale: 0.5,
+    scale: 0.19,
   },
   samplers: [
     {

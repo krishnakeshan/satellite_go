@@ -35,17 +35,18 @@ dependencies {
 
     implementation 'com.google.ar:core:1.12.0'
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.12.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
 }
 
 sceneform.asset('sampledata/Earth.gltf',
         'default',
         'sampledata/Earth.sfa',
         'src/main/assets/Earth')
-
-sceneform.asset('sampledata/aura.fbx',
-        'default',
-        'sampledata/aura.sfa',
-        'src/main/res/raw/aura')
 
 sceneform.asset('sampledata/satellite.fbx',
         'default',

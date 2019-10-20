@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_start_azimuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_start_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_end_azimuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/view_holder_pass_satellite_end_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#8B8A8A" />
+
+</LinearLayout>

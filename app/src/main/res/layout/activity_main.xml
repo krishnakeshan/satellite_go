@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,108 @@
     <fragment
         android:id="@+id/activity_main_ar_fragment"
         android:name="com.google.ar.sceneform.ux.ArFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/activity_main_user_location_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#111"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="Your Location: " />
+
+    <ScrollView
+        android:id="@+id/activity_main_sat_info_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#111"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/activity_main_sat_info_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Satellite NORAD ID:"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/activity_main_sat_norad_id_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="#fff"
+                tools:text="Sasta" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Satellite Name:"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/activity_main_sat_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Satellite Location:"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/activity_main_sat_position_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="#fff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activity_main_view_passes_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:backgroundTint="#fff"
+                android:text="View Visual Passes" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activity_main_close_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:backgroundTint="#fff"
+                android:text="Close" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
