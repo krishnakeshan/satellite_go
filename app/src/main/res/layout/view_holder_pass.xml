@@ -8,48 +8,56 @@
         android:id="@+id/view_holder_pass_satellite_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <TextView
         android:id="@+id/view_holder_pass_satellite_start_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <TextView
         android:id="@+id/view_holder_pass_satellite_start_azimuth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <TextView
         android:id="@+id/view_holder_pass_satellite_start_elevation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <TextView
         android:id="@+id/view_holder_pass_satellite_end_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <TextView
         android:id="@+id/view_holder_pass_satellite_end_azimuth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <TextView
         android:id="@+id/view_holder_pass_satellite_end_elevation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#eee" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_margin="10dp"
-        android:background="#8B8A8A" />
+        android:background="#8B8A8A"
+        android:textColor="#eee" />
 
 </LinearLayout>
